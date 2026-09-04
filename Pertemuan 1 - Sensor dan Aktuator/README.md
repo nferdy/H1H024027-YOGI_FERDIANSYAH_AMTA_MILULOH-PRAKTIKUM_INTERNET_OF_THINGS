@@ -1,5 +1,10 @@
 **Pertemuan 1 - Sensor dan Aktuator**
 
+**Nama      : Yogi Ferdiansyah Amta Miluloh**
+**NIM       : H1H024027**
+**Shift     : B**
+**Shift KRS : C**
+
 **Penjelasan Code**
 
 **Percobaan 1**
@@ -65,19 +70,14 @@ Pada **Percobaan 2**, program pertama-tama memverifikasi validitas data. Jika ti
 
 **Jawaban Pertanyaan Praktikum yang Berkaitan dengan Code**
 
-**Percobaan 1**
 
-**1. Diagram Alur**
-Berikut representasi alur untuk akuisisi data:
-`[Masukkan Gambar Flowchart Percobaan 1]`
-
-**2. Fungsi isnan()**
+**1. Fungsi isnan()**
 Perintah `isnan()` bertugas mendeteksi data cacat (*Not a Number*) akibat kegagalan sinyal konversi. Dengan menambahkan syarat penyaringan seperti `!isnan(suhu) && !isnan(kelembaban)`, program memastikan hanya data angka bulat atau desimal yang sah yang akan diproses lebih lanjut, misalnya untuk keperluan perhitungan rata-rata.
 
-**3. Alasan Menggunakan delay()**
+**2. Alasan Menggunakan delay()**
 Sensor tipe DHT tidak didesain untuk merespons frekuensi pembacaan yang sangat ekstrem. Jeda interval sekitar 2 hingga 3 detik memberikan kompensasi waktu yang cukup bagi mikrokontroler internal sensor DHT untuk menyempurnakan penghitungan analitiknya. Jika dipaksa terlalu cepat, ESP32 berpotensi gagal merekam data (menghasilkan respons NaN) atau datanya menjadi sangat tidak stabil.
 
-**4. Modifikasi Rata-rata Lima Pembacaan**
+**3. Modifikasi Rata-rata Lima Pembacaan**
 Berikut segmen program yang diubah untuk mengakumulasi lima data akurat sebelum mencetak rata-ratanya:
 
 ```cpp
@@ -192,5 +192,19 @@ GPIO 26 -------------- IN / Anoda (melalui resistor)
 
 Pemetaan pin konfigurasi di atas sejalan dengan inisialisasi di baris awal program. Rangkaian pasokan daya bisa sedikit bervariasi bergantung apakah praktikan menggunakan lampu LED atau modul Relay bertegangan 5V saat sesi berjalan.
 
-**Foto Proses Praktikum atau Perangkaian**
-`[Tambahkan tautan foto/video demonstrasi praktik di laboratorium]`
+**Dokumentasi**
+<img width="3060" height="4080" alt="IMG_20260902_124122" src="https://github.com/user-attachments/assets/a2ed40ef-1351-470f-9bfd-755b8adb77ec" />
+<img width="3060" height="4080" alt="IMG_20260902_124128" src="https://github.com/user-attachments/assets/7841a3d5-cdf4-4de5-bc46-5f4f6a613b39" />
+
+
+<img width="1600" height="289" alt="normal" src="https://github.com/user-attachments/assets/d725ce63-c4b5-4c40-a2db-19bc16803120" />
+suhu normal
+
+<img width="1600" height="279" alt="ac" src="https://github.com/user-attachments/assets/42523db0-988c-4ba4-af47-abeb1e856f75" />
+suhu + ac
+
+<img width="1600" height="276" alt="digenggam" src="https://github.com/user-attachments/assets/149baf40-dcaf-480b-8760-8b140b567e92" />
+digenggam
+
+
+
