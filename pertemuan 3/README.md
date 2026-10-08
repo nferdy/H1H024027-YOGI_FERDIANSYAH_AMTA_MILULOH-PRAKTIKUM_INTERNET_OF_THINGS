@@ -1,3 +1,8 @@
+# Modul3
+## Yogi Ferdiansyah Amta Miluloh
+## H1H024027
+## Shift (B)
+
 # Library atau dependencies yang diperlukan
 - Arduino IDE
 - NodeMCU ESP8266
