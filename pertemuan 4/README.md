@@ -1,4 +1,7 @@
-# Modul4 - Percobaan - Javier Anthonio Justiansah - H1H024026
+# Modul4 - Percobaan 
+## Yogi Ferdiansyah Amta Miluloh
+## H1H024027
+## Shift (B)
 
 ## Library atau Dependencies yang Diperlukan
 - Arduino IDE
